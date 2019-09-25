@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script>
+    function yourFunction(){
+    // var action_src = "http://localhost/test/" + document.getElementsByName("keywords")[0].value;
+    // var your_form = document.getElementById('your_form');
+    // your_form.action = action_src ;
+    let url = "https://login.microsoftonline.com/d4b7e268-9b08-4062-a07a-f98550f56298/oauth2/authorize?client_id=8f9906b8-3153-4d39-84f8-b263fcc86464&prompt=consent&scope=openid%20profile%20offline_access%20api%3A%2F%2F8f9906b8-3153-4d39-84f8-b263fcc86464%2F.default&response_type=code&redirect_uri=http://localhost:6000/home/redirectURI"
+    //window.location = "http://www.corelangs.com/css"+document.getElementById("empId").value
+    window.location = url;
+}
+  </script>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <!-- <div class="col-sm-4">
+      <div class="form-group">
+        <label for="text">Employee Id :</label>
+        <input class="form-control" type="text" id="empId">
+      </div> -->
+  <button type="submit" class="btn btn-primary mb-2" onclick="yourFunction()" >Submit</button>
+  
+    </div>
+    </div>
+    </div>
+  
+</body>
+</html>
